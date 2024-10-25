@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1 class="text">CALCULATE ME</h1>
+    <div id="Calculater">
+
+        <input type="text" class="input  inputfeild" id="result" disabled value="0">
+
+        <div id="one">
+            <button class="button1" onclick="clearAns('AC')"> AC </button>
+            <button class="button1" onclick="clearAns()"> DEL </button>
+            <button class="button1" onclick="forResult('%')"> % </button>
+            <button class="button1" onclick="forResult('/')"> \ </button>
+        </div>
+        <div id="one">
+            <button class="button" onclick="forResult('7')">7</button>
+            <button class="button" onclick="forResult('8')">8</button>
+            <button class="button" onclick="forResult('9')">9</button>
+            <button class="button1" onclick="forResult('*')">*</button>
+        </div>
+        <div id="one">
+            <button class="button" onclick="forResult('4')">4</button>
+            <button class="button" onclick="forResult('5')">5</button>
+            <button class="button" onclick="forResult('6')">6</button>
+            <button class="button1" onclick="forResult('-')">-</button>
+        </div>           
+        <div id="one">
+            <button class="button" onclick="forResult('3')">3</button>
+            <button class="button" onclick="forResult('2')">2</button>
+            <button class="button" onclick="forResult('1')">1</button>
+            <button class="button1" onclick="forResult('+')">+</button>
+        </div>
+        <div id="one">
+            <button class="button2" onclick="forResult('0')">0</button>
+            <button class="button" onclick="forResult('.')">.</button>
+            <button class="button1" onclick="calculateAns()">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
